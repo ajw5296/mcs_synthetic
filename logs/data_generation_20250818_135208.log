@@ -1,0 +1,121 @@
+2025-08-18 13:52:08,767 - __main__ - INFO - Starting synthetic data generation with config: total_cases=10 batch_size=2 model_id='anthropic.claude-3-sonnet-20240229-v1:0' region='us-east-1' max_retries=3 abuse_type_distribution={'no_maltreatment': 0.15, 'sexual_abuse': 0.12, 'physical_abuse': 0.2, 'physical_neglect_failure': 0.15, 'physical_neglect_supervision': 0.13, 'emotional_abuse': 0.1, 'moral_legal_abuse': 0.08, 'educational_abuse': 0.07} severity_distribution={1: 0.05, 2: 0.15, 3: 0.35, 4: 0.3, 5: 0.15}
+2025-08-18 13:52:08,799 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-08-18 13:52:08,902 - data_generator - INFO - Starting generation of 10 cases
+2025-08-18 13:52:08,904 - data_generator - INFO - Generating 1 cases of type: no_maltreatment
+2025-08-18 13:52:38,523 - data_generator - INFO - Completed batch: 1 valid cases generated
+2025-08-18 13:52:38,523 - data_generator - INFO - Generating 1 cases of type: sexual_abuse
+2025-08-18 13:52:44,750 - bedrock_client - ERROR - Error generating narratives, attempt 1: No valid JSON found in response
+2025-08-18 13:52:50,243 - bedrock_client - ERROR - Error generating narratives, attempt 2: No valid JSON found in response
+2025-08-18 13:52:58,858 - bedrock_client - ERROR - Error generating narratives, attempt 3: No valid JSON found in response
+2025-08-18 13:52:58,858 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:52:58,858 - data_generator - WARNING - Generated invalid case for sexual_abuse, skipping
+2025-08-18 13:52:58,958 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-18 13:52:58,958 - data_generator - INFO - Generating 2 cases of type: physical_abuse
+2025-08-18 13:53:03,433 - bedrock_client - ERROR - Error generating narratives, attempt 1: No valid JSON found in response
+2025-08-18 13:53:09,962 - bedrock_client - ERROR - Error generating narratives, attempt 2: No valid JSON found in response
+2025-08-18 13:53:18,950 - bedrock_client - ERROR - Error generating narratives, attempt 3: No valid JSON found in response
+2025-08-18 13:53:18,950 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:53:18,950 - data_generator - WARNING - Generated invalid case for physical_abuse, skipping
+2025-08-18 13:53:45,504 - data_generator - INFO - Completed batch: 1 valid cases generated
+2025-08-18 13:53:45,504 - data_generator - INFO - Generating 2 cases of type: physical_neglect_failure
+2025-08-18 13:54:48,223 - data_generator - INFO - Completed batch: 2 valid cases generated
+2025-08-18 13:54:48,223 - data_generator - INFO - Generating 1 cases of type: physical_neglect_supervision
+2025-08-18 13:55:08,174 - data_generator - INFO - Completed batch: 1 valid cases generated
+2025-08-18 13:55:08,174 - data_generator - INFO - Generating 1 cases of type: emotional_abuse
+2025-08-18 13:55:33,655 - data_generator - INFO - Completed batch: 1 valid cases generated
+2025-08-18 13:55:33,655 - data_generator - INFO - Generating 1 cases of type: moral_legal_abuse
+2025-08-18 13:56:00,275 - data_generator - INFO - Completed batch: 1 valid cases generated
+2025-08-18 13:56:00,275 - data_generator - INFO - Generating 1 cases of type: educational_abuse
+2025-08-18 13:56:23,178 - data_generator - INFO - Completed batch: 1 valid cases generated
+2025-08-18 13:56:23,182 - data_generator - INFO - Dataset saved to: output\synthetic_maltreatment_data.csv
+2025-08-18 13:56:23,182 - data_generator - INFO - Generated 8 total cases
+2025-08-18 13:56:23,182 - __main__ - INFO - Generation Statistics:
+2025-08-18 13:56:23,182 - __main__ - INFO - {
+  "total_cases": 8,
+  "binary_coding_counts": {
+    "any_maltreatment": 8,
+    "sexual_abuse": 0,
+    "physical_abuse": 3,
+    "physical_neglect_failure_to_provide": 1,
+    "physical_neglect_lack_of_supervision": 2,
+    "emotional_abuse": 5,
+    "moral_legal_abuse": 1,
+    "educational_abuse": 2
+  },
+  "severity_distributions": {
+    "physical_abuse_severity": {
+      "count": 3,
+      "mean": 3.3333333333333335,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 2,
+        "5": 0
+      }
+    },
+    "physical_neglect_failure_severity": {
+      "count": 1,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "physical_neglect_supervision_severity": {
+      "count": 2,
+      "mean": 2.5,
+      "distribution": {
+        "1": 0,
+        "2": 1,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "emotional_abuse_severity": {
+      "count": 5,
+      "mean": 3.4,
+      "distribution": {
+        "1": 0,
+        "2": 2,
+        "3": 0,
+        "4": 2,
+        "5": 1
+      }
+    },
+    "moral_legal_abuse_severity": {
+      "count": 1,
+      "mean": 5.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 1
+      }
+    },
+    "educational_abuse_severity": {
+      "count": 2,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 0,
+        "5": 0
+      }
+    }
+  },
+  "validation_results": {
+    "valid_cases": 8,
+    "invalid_cases": 0
+  }
+}
+2025-08-18 13:56:23,184 - __main__ - INFO - Dataset generation completed successfully!
+2025-08-18 13:56:23,184 - __main__ - INFO - Dataset saved to: ./output/synthetic_maltreatment_data.csv
+2025-08-18 13:56:23,184 - __main__ - INFO - Statistics saved to: output\generation_stats_20250818_135623.json
+2025-08-18 13:56:23,185 - __main__ - INFO - Total cases generated: 8

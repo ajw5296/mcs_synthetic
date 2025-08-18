@@ -1,0 +1,104 @@
+2025-08-18 13:50:46,622 - __main__ - INFO - Starting synthetic data generation with config: total_cases=10 batch_size=2 model_id='anthropic.claude-3-sonnet-20240229-v1:0' region='us-east-1' max_retries=3 abuse_type_distribution={'no_maltreatment': 0.15, 'sexual_abuse': 0.12, 'physical_abuse': 0.2, 'physical_neglect_failure': 0.15, 'physical_neglect_supervision': 0.13, 'emotional_abuse': 0.1, 'moral_legal_abuse': 0.08, 'educational_abuse': 0.07} severity_distribution={1: 0.05, 2: 0.15, 3: 0.35, 4: 0.3, 5: 0.15}
+2025-08-18 13:50:46,646 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-08-18 13:50:46,752 - data_generator - INFO - Starting generation of 10 cases
+2025-08-18 13:50:46,752 - data_generator - INFO - Generating 1 cases of type: no_maltreatment
+2025-08-18 13:50:46,937 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:46,937 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:48,572 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:48,572 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:50,927 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:50,927 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:50,927 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:50:50,927 - data_generator - WARNING - Generated invalid case for no_maltreatment, skipping
+2025-08-18 13:50:51,027 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-18 13:50:51,037 - data_generator - INFO - Generating 1 cases of type: sexual_abuse
+2025-08-18 13:50:51,143 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:51,143 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:53,398 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:53,398 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:54,967 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:54,967 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:54,968 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:50:54,968 - data_generator - WARNING - Generated invalid case for sexual_abuse, skipping
+2025-08-18 13:50:55,068 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-18 13:50:55,068 - data_generator - INFO - Generating 2 cases of type: physical_abuse
+2025-08-18 13:50:55,152 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:55,152 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:56,336 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:56,336 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:58,507 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:58,507 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:58,507 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:50:58,507 - data_generator - WARNING - Generated invalid case for physical_abuse, skipping
+2025-08-18 13:50:58,708 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:58,708 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:59,959 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:50:59,975 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:01,632 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:01,632 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:01,632 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:51:01,632 - data_generator - WARNING - Generated invalid case for physical_abuse, skipping
+2025-08-18 13:51:01,745 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-18 13:51:01,745 - data_generator - INFO - Generating 3 cases of type: physical_neglect_failure
+2025-08-18 13:51:01,847 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:01,847 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:04,568 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:04,568 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:06,788 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:06,788 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:06,790 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:51:06,790 - data_generator - WARNING - Generated invalid case for physical_neglect_failure, skipping
+2025-08-18 13:51:07,006 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:07,006 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:10,095 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:10,095 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:11,828 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:11,828 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:11,828 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:51:11,828 - data_generator - WARNING - Generated invalid case for physical_neglect_failure, skipping
+2025-08-18 13:51:11,931 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-18 13:51:11,986 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:11,986 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:14,271 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:14,271 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:16,238 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:16,238 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:16,238 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:51:16,239 - data_generator - WARNING - Generated invalid case for physical_neglect_failure, skipping
+2025-08-18 13:51:16,339 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-18 13:51:16,339 - data_generator - INFO - Generating 2 cases of type: physical_neglect_supervision
+2025-08-18 13:51:16,439 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:16,439 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:18,010 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:18,025 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:20,940 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:20,940 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:20,940 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:51:20,940 - data_generator - WARNING - Generated invalid case for physical_neglect_supervision, skipping
+2025-08-18 13:51:21,132 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:21,132 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:22,386 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:22,386 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:25,139 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:25,139 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:25,139 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:51:25,140 - data_generator - WARNING - Generated invalid case for physical_neglect_supervision, skipping
+2025-08-18 13:51:25,255 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-18 13:51:25,255 - data_generator - INFO - Generating 1 cases of type: emotional_abuse
+2025-08-18 13:51:25,355 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:25,355 - bedrock_client - ERROR - Error generating narratives, attempt 1: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:27,946 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:27,947 - bedrock_client - ERROR - Error generating narratives, attempt 2: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:30,750 - bedrock_client - ERROR - AWS Bedrock API error: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:30,750 - bedrock_client - ERROR - Error generating narratives, attempt 3: An error occurred (AccessDeniedException) when calling the InvokeModel operation: You don't have access to the model with the specified model ID.
+2025-08-18 13:51:30,750 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 13:51:30,750 - data_generator - WARNING - Generated invalid case for emotional_abuse, skipping
+2025-08-18 13:51:30,866 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-18 13:51:30,882 - data_generator - INFO - Dataset saved to: output\synthetic_maltreatment_data.csv
+2025-08-18 13:51:30,882 - data_generator - INFO - Generated 0 total cases
+2025-08-18 13:51:30,882 - __main__ - INFO - Generation Statistics:
+2025-08-18 13:51:30,882 - __main__ - INFO - {}
+2025-08-18 13:51:30,882 - __main__ - INFO - Dataset generation completed successfully!
+2025-08-18 13:51:30,882 - __main__ - INFO - Dataset saved to: ./output/synthetic_maltreatment_data.csv
+2025-08-18 13:51:30,883 - __main__ - INFO - Statistics saved to: output\generation_stats_20250818_135130.json
+2025-08-18 13:51:30,883 - __main__ - INFO - Total cases generated: 0
