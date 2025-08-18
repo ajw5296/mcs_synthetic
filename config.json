@@ -1,0 +1,24 @@
+{
+    "total_cases": 100,
+    "batch_size": 5,
+    "model_id": "anthropic.claude-3-sonnet-20240229-v1:0",
+    "region": "us-east-1",
+    "max_retries": 3,
+    "abuse_type_distribution": {
+        "no_maltreatment": 0.15,
+        "sexual_abuse": 0.12,
+        "physical_abuse": 0.20,
+        "physical_neglect_failure": 0.15,
+        "physical_neglect_supervision": 0.13,
+        "emotional_abuse": 0.10,
+        "moral_legal_abuse": 0.08,
+        "educational_abuse": 0.07
+    },
+    "severity_distribution": {
+        "1": 0.05,
+        "2": 0.15,
+        "3": 0.35,
+        "4": 0.30,
+        "5": 0.15
+    }
+}
