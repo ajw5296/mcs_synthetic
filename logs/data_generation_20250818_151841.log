@@ -1,0 +1,594 @@
+2025-08-18 15:18:41,710 - __main__ - INFO - Starting synthetic data generation with config: total_cases=5 batch_size=2 model_id='anthropic.claude-3-sonnet-20240229-v1:0' region='us-east-1' max_retries=3 abuse_type_distribution={'no_maltreatment': 0.15, 'sexual_abuse': 0.12, 'physical_abuse': 0.2, 'physical_neglect_failure': 0.15, 'physical_neglect_supervision': 0.13, 'emotional_abuse': 0.1, 'moral_legal_abuse': 0.08, 'educational_abuse': 0.07} severity_distribution={1: 0.05, 2: 0.15, 3: 0.35, 4: 0.3, 5: 0.15}
+2025-08-18 15:18:41,710 - botocore.hooks - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2025-08-18 15:18:41,726 - botocore.hooks - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2025-08-18 15:18:41,742 - botocore.utils - DEBUG - IMDS ENDPOINT: http://169.254.169.254/
+2025-08-18 15:18:41,743 - botocore.credentials - DEBUG - Looking for credentials via: env
+2025-08-18 15:18:41,743 - botocore.credentials - DEBUG - Looking for credentials via: assume-role
+2025-08-18 15:18:41,744 - botocore.credentials - DEBUG - Looking for credentials via: assume-role-with-web-identity
+2025-08-18 15:18:41,744 - botocore.credentials - DEBUG - Looking for credentials via: sso
+2025-08-18 15:18:41,744 - botocore.credentials - DEBUG - Looking for credentials via: shared-credentials-file
+2025-08-18 15:18:41,744 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-08-18 15:18:41,745 - botocore.loaders - DEBUG - Loading JSON file: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\data\endpoints.json
+2025-08-18 15:18:41,748 - botocore.loaders - DEBUG - Loading JSON file: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\data\sdk-default-configuration.json
+2025-08-18 15:18:41,748 - botocore.hooks - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x000002ACD7D3DB40>
+2025-08-18 15:18:41,795 - botocore.loaders - DEBUG - Loading JSON file: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\data\bedrock-runtime\2023-09-30\service-2.json.gz
+2025-08-18 15:18:41,845 - botocore.loaders - DEBUG - Loading JSON file: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\data\bedrock-runtime\2023-09-30\endpoint-rule-set-1.json.gz
+2025-08-18 15:18:41,845 - botocore.loaders - DEBUG - Loading JSON file: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\data\partitions.json
+2025-08-18 15:18:41,845 - botocore.hooks - DEBUG - Event creating-client-class.bedrock-runtime: calling handler <function remove_bedrock_runtime_invoke_model_with_bidirectional_stream at 0x000002ACD7D5D510>
+2025-08-18 15:18:41,845 - botocore.hooks - DEBUG - Event creating-client-class.bedrock-runtime: calling handler <function add_generate_presigned_url at 0x000002ACD7CBD000>
+2025-08-18 15:18:41,845 - botocore.configprovider - DEBUG - Looking for endpoint for bedrock-runtime via: environment_service
+2025-08-18 15:18:41,845 - botocore.configprovider - DEBUG - Looking for endpoint for bedrock-runtime via: environment_global
+2025-08-18 15:18:41,845 - botocore.configprovider - DEBUG - Looking for endpoint for bedrock-runtime via: config_service
+2025-08-18 15:18:41,845 - botocore.configprovider - DEBUG - Looking for endpoint for bedrock-runtime via: config_global
+2025-08-18 15:18:41,845 - botocore.configprovider - DEBUG - No configured endpoint found.
+2025-08-18 15:18:41,845 - botocore.regions - DEBUG - Creating a regex based endpoint for bedrock-runtime, us-east-1
+2025-08-18 15:18:41,845 - botocore.endpoint - DEBUG - Setting bedrock-runtime timeout as (60, 60)
+2025-08-18 15:18:41,845 - botocore.loaders - DEBUG - Loading JSON file: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\data\_retry.json
+2025-08-18 15:18:41,845 - botocore.client - DEBUG - Registering retry handlers for service: bedrock-runtime
+2025-08-18 15:18:41,845 - data_generator - INFO - Starting generation of 5 cases
+2025-08-18 15:18:41,845 - data_generator - INFO - Generating 1 cases of type: sexual_abuse
+2025-08-18 15:18:41,865 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:18:41,865 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:18:41,865 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:18:41,865 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:18:41,866 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:18:41,866 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:18:41,866 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are a social worker creating realistic synthetic case narratives for research purposes. Generate narratives for a case involving sexual abuse or exploitation of a child. The case should be moderate in severity.\\n\\nPlease create four distinct narrative sections:\\n\\n1. MALTREATMENT_NARRATIVE: A detailed account (200-400 words) written by the case worker describing what transpired. Include allegations from various sources like neighbors, police, parents, siblings, friends, etc. This should be a comprehensive accounting of all available information about the incident(s).\\n\\n2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.\\n\\n3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.\\n\\n4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.\\n\\nMake the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.\\n\\nFormat your response as JSON with exactly these keys:\\n{\\n    \\"maltreatment_narrative\\": \\"...\\",\\n    \\"severity_narrative\\": \\"...\\", \\n    \\"risk_narrative\\": \\"...\\",\\n    \\"safety_assessment_narrative\\": \\"...\\"\\n}"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:18:41,866 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:18:41,866 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:18:41,866 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:18:41,867 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:18:41,867 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T191841Z
+
+accept;content-type;host;x-amz-date
+f934149fbbdb8d99b323b9a496debf0153183b583951e51475ca245422c61497
+2025-08-18 15:18:41,867 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T191841Z
+20250818/us-east-1/bedrock/aws4_request
+4d6a78c56193822d31d61cb776cbc716ed2f37f303d1a6e391176cf10ea63052
+2025-08-18 15:18:41,867 - botocore.auth - DEBUG - Signature:
+4823c42e639ac337ff4eec086e31eb689fe6995c3d6993750e33fdadf3f98cef
+2025-08-18 15:18:41,867 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:18:41,867 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:18:41,867 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T191841Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=4823c42e639ac337ff4eec086e31eb689fe6995c3d6993750e33fdadf3f98cef', 'amz-sdk-invocation-id': b'acc43706-9641-4f53-ba02-d7d55e8996b2', 'amz-sdk-request': b'attempt=1', 'Content-Length': '1665'}>
+2025-08-18 15:18:41,868 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:18:41,868 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bedrock-runtime.us-east-1.amazonaws.com:443
+2025-08-18 15:18:52,953 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 838
+2025-08-18 15:18:52,954 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:18:51 GMT', 'Content-Type': 'application/json', 'Content-Length': '838', 'Connection': 'keep-alive', 'x-amzn-RequestId': '9a1a7d06-b463-4417-ab86-15a42806ff14', 'X-Amzn-Bedrock-Invocation-Latency': '10922', 'X-Amzn-Bedrock-Output-Token-Count': '118', 'X-Amzn-Bedrock-Input-Token-Count': '336'}
+2025-08-18 15:18:52,954 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5BDC0>
+2025-08-18 15:18:52,954 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:18:52,954 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:18:52,954 - bedrock_client - ERROR - Error generating narratives, attempt 1: No valid JSON found in response
+2025-08-18 15:18:54,609 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:18:54,609 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:18:54,609 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:18:54,609 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:18:54,609 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:18:54,609 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:18:54,609 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are a social worker creating realistic synthetic case narratives for research purposes. Generate narratives for a case involving sexual abuse or exploitation of a child. The case should be moderate in severity.\\n\\nPlease create four distinct narrative sections:\\n\\n1. MALTREATMENT_NARRATIVE: A detailed account (200-400 words) written by the case worker describing what transpired. Include allegations from various sources like neighbors, police, parents, siblings, friends, etc. This should be a comprehensive accounting of all available information about the incident(s).\\n\\n2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.\\n\\n3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.\\n\\n4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.\\n\\nMake the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.\\n\\nFormat your response as JSON with exactly these keys:\\n{\\n    \\"maltreatment_narrative\\": \\"...\\",\\n    \\"severity_narrative\\": \\"...\\", \\n    \\"risk_narrative\\": \\"...\\",\\n    \\"safety_assessment_narrative\\": \\"...\\"\\n}"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:18:54,609 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:18:54,609 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:18:54,609 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:18:54,609 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:18:54,609 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T191854Z
+
+accept;content-type;host;x-amz-date
+f934149fbbdb8d99b323b9a496debf0153183b583951e51475ca245422c61497
+2025-08-18 15:18:54,609 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T191854Z
+20250818/us-east-1/bedrock/aws4_request
+97824d6d3b0adde9f9e553088ddd9e7942ddd411fbc35a50cff5826a4c01ef5d
+2025-08-18 15:18:54,609 - botocore.auth - DEBUG - Signature:
+a3e6e18f59bba4cc408d806f4c1620d27c5c09008aa3e085e61d9e80a3b372d5
+2025-08-18 15:18:54,609 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:18:54,609 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:18:54,609 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T191854Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=a3e6e18f59bba4cc408d806f4c1620d27c5c09008aa3e085e61d9e80a3b372d5', 'amz-sdk-invocation-id': b'1b320ce5-8a0a-46b5-8b08-a1c01f8b7379', 'amz-sdk-request': b'attempt=1', 'Content-Length': '1665'}>
+2025-08-18 15:18:54,609 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:18:59,436 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 812
+2025-08-18 15:18:59,436 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:18:58 GMT', 'Content-Type': 'application/json', 'Content-Length': '812', 'Connection': 'keep-alive', 'x-amzn-RequestId': '5b796d32-fd0a-4e7b-9fac-a286ba36b9ad', 'X-Amzn-Bedrock-Invocation-Latency': '4784', 'X-Amzn-Bedrock-Output-Token-Count': '112', 'X-Amzn-Bedrock-Input-Token-Count': '336'}
+2025-08-18 15:18:59,436 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5B310>
+2025-08-18 15:18:59,437 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:18:59,437 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:18:59,437 - bedrock_client - ERROR - Error generating narratives, attempt 2: No valid JSON found in response
+2025-08-18 15:19:00,938 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:19:00,938 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:19:00,938 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:19:00,938 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:19:00,938 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:19:00,938 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:19:00,938 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are a social worker creating realistic synthetic case narratives for research purposes. Generate narratives for a case involving sexual abuse or exploitation of a child. The case should be moderate in severity.\\n\\nPlease create four distinct narrative sections:\\n\\n1. MALTREATMENT_NARRATIVE: A detailed account (200-400 words) written by the case worker describing what transpired. Include allegations from various sources like neighbors, police, parents, siblings, friends, etc. This should be a comprehensive accounting of all available information about the incident(s).\\n\\n2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.\\n\\n3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.\\n\\n4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.\\n\\nMake the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.\\n\\nFormat your response as JSON with exactly these keys:\\n{\\n    \\"maltreatment_narrative\\": \\"...\\",\\n    \\"severity_narrative\\": \\"...\\", \\n    \\"risk_narrative\\": \\"...\\",\\n    \\"safety_assessment_narrative\\": \\"...\\"\\n}"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:19:00,938 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:19:00,938 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:19:00,938 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:19:00,938 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:19:00,938 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T191900Z
+
+accept;content-type;host;x-amz-date
+f934149fbbdb8d99b323b9a496debf0153183b583951e51475ca245422c61497
+2025-08-18 15:19:00,938 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T191900Z
+20250818/us-east-1/bedrock/aws4_request
+de87f279cab77f6fc5ac66cc5ab487c9b4037c419eddee1613701fc326bb06b9
+2025-08-18 15:19:00,938 - botocore.auth - DEBUG - Signature:
+b6ea1d8bf0eea9b266f092b0b0d8af257e0c9ded6e0759c3aca9028196096184
+2025-08-18 15:19:00,938 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:19:00,938 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:19:00,938 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T191900Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=b6ea1d8bf0eea9b266f092b0b0d8af257e0c9ded6e0759c3aca9028196096184', 'amz-sdk-invocation-id': b'68bec893-e1d9-4075-93f3-c944307d4749', 'amz-sdk-request': b'attempt=1', 'Content-Length': '1665'}>
+2025-08-18 15:19:00,938 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:19:03,556 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 604
+2025-08-18 15:19:03,557 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:19:02 GMT', 'Content-Type': 'application/json', 'Content-Length': '604', 'Connection': 'keep-alive', 'x-amzn-RequestId': '07906a4e-985d-420f-b775-47f9bc6fb9a1', 'X-Amzn-Bedrock-Invocation-Latency': '2577', 'X-Amzn-Bedrock-Output-Token-Count': '72', 'X-Amzn-Bedrock-Input-Token-Count': '336'}
+2025-08-18 15:19:03,557 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5BA90>
+2025-08-18 15:19:03,557 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:19:03,557 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:19:03,557 - bedrock_client - ERROR - Error generating narratives, attempt 3: No valid JSON found in response
+2025-08-18 15:19:03,557 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 15:19:03,558 - data_generator - WARNING - Generated invalid case for sexual_abuse, skipping
+2025-08-18 15:19:03,666 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-18 15:19:03,666 - data_generator - INFO - Generating 2 cases of type: physical_abuse
+2025-08-18 15:19:03,666 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:19:03,667 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:19:03,667 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:19:03,667 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:19:03,667 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:19:03,667 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:19:03,667 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are a social worker creating realistic synthetic case narratives for research purposes. Generate narratives for a case involving physical abuse, hitting, beating, or other physical harm. The case should be moderate in severity.\\n\\nPlease create four distinct narrative sections:\\n\\n1. MALTREATMENT_NARRATIVE: A detailed account (200-400 words) written by the case worker describing what transpired. Include allegations from various sources like neighbors, police, parents, siblings, friends, etc. This should be a comprehensive accounting of all available information about the incident(s).\\n\\n2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.\\n\\n3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.\\n\\n4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.\\n\\nMake the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.\\n\\nFormat your response as JSON with exactly these keys:\\n{\\n    \\"maltreatment_narrative\\": \\"...\\",\\n    \\"severity_narrative\\": \\"...\\", \\n    \\"risk_narrative\\": \\"...\\",\\n    \\"safety_assessment_narrative\\": \\"...\\"\\n}"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:19:03,667 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:19:03,668 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:19:03,668 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:19:03,668 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:19:03,668 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T191903Z
+
+accept;content-type;host;x-amz-date
+d3de93f3ea0d494c7cadcf5da64e4a5c48d2a9945086aec1c188718ab62bc77b
+2025-08-18 15:19:03,668 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T191903Z
+20250818/us-east-1/bedrock/aws4_request
+e79d53ad4555a2e4da210db39f8bb4b1003cc02a4655f54c01fadc65224d128a
+2025-08-18 15:19:03,668 - botocore.auth - DEBUG - Signature:
+f24b60862fd1475cb6576e0d50709e5e9ce50bf4e4fb0241450dac53eaeee4eb
+2025-08-18 15:19:03,668 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:19:03,669 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:19:03,669 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T191903Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=f24b60862fd1475cb6576e0d50709e5e9ce50bf4e4fb0241450dac53eaeee4eb', 'amz-sdk-invocation-id': b'ea48cf91-352a-4530-8150-2af1b8094a1c', 'amz-sdk-request': b'attempt=1', 'Content-Length': '1682'}>
+2025-08-18 15:19:03,669 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:19:38,213 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 3055
+2025-08-18 15:19:38,213 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:19:37 GMT', 'Content-Type': 'application/json', 'Content-Length': '3055', 'Connection': 'keep-alive', 'x-amzn-RequestId': '4aac7af0-ddf1-4a55-8c12-73244e734ad6', 'X-Amzn-Bedrock-Invocation-Latency': '34519', 'X-Amzn-Bedrock-Output-Token-Count': '578', 'X-Amzn-Bedrock-Input-Token-Count': '340'}
+2025-08-18 15:19:38,213 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5AF80>
+2025-08-18 15:19:38,213 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:19:38,213 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:19:38,213 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:19:38,213 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:19:38,213 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:19:38,213 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:19:38,213 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:19:38,213 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:19:38,213 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are an expert social worker who codes maltreatment cases based on narrative data. Based on the following narratives, provide accurate binary codings and severity ratings.\\n\\nNARRATIVES:\\nMaltreatment Narrative: On March 15th, a report was received from a neighbor stating they heard loud arguing and a child crying from the Smith residence. The neighbor reported seeing Mr. Smith strike his 8-year-old son, Jason, multiple times across the face. When police arrived, they found Jason with a bloody nose and red marks on his cheek. According to the police report, Mr. Smith admitted to \'losing his temper\' and hitting Jason after the child spilled his drink at the dinner table. Mrs. Smith corroborated that her husband had hit Jason but stated it was a one-time incident brought on by stress at work. Jason\'s teacher, Ms. Johnson, reported that Jason had come to school with bruises on his arms a few weeks prior, but when asked, Jason said he had fallen off his bike. Medical records show Jason was treated for a broken wrist 6 months ago, which Mr. Smith stated occurred from a fall while playing basketball.\\n\\nSeverity Narrative: This case represents a moderate level of physical abuse. While the most recent incident resulted in visible injuries to Jason\'s face, the repeated bruising over time and previous broken bone are concerning patterns. Mr. Smith has acknowledged physically disciplining his son through hitting, indicating this is an established parenting practice in the home. The potential for escalating violence and the vulnerability of Jason\'s age point to a moderately severe situation requiring intervention.\\n\\nRisk Narrative: There are risk factors that increase the likelihood of future maltreatment in this case. Mr. Smith\'s inability to control his temper and resort to physical discipline is a primary risk factor. The family has also experienced stressors, such as Mr. Smith\'s job difficulties, which can exacerbate the risk. However, some protective factors are present - Mrs. Smith has not been accused of abuse, suggesting at least one non-offending parent, and the family is willing to engage with authorities thus far. With proper services and the mitigation of risk factors, the risk of future abuse could be reduced.\\n\\nSafety Assessment Narrative: Based on the information available, there are ongoing safety concerns regarding Jason\'s immediate situation. While he has not been hospitalized from the abuse, the escalating pattern of physical injuries over time is troubling. Mr. Smith remains in the home and has demonstrated a propensity to lash out physically under stress. Leaving Jason in an environment where he could be subjected to further violence from an inability to control aggressive behaviors poses a safety threat. At minimum, a safety plan involving temporary removal or perpetrator removal should be considered until Mr. Smith receives the appropriate services to prevent future maltreatment.\\n\\nPlease provide codings in the following JSON format:\\n\\n{\\n    \\"binary_codings\\": {\\n        \\"any_maltreatment\\": true/false,\\n        \\"sexual_abuse\\": true/false,\\n        \\"physical_abuse\\": true/false,\\n        \\"physical_neglect_failure_to_provide\\": true/false,\\n        \\"physical_neglect_lack_of_supervision\\": true/false,\\n        \\"emotional_abuse\\": true/false,\\n        \\"moral_legal_abuse\\": true/false,\\n        \\"educational_abuse\\": true/false\\n    },\\n    \\"severity_codings\\": {\\n        \\"sexual_abuse_severity\\": 1-5 or null,\\n        \\"physical_abuse_severity\\": 1-5 or null,\\n        \\"physical_neglect_failure_severity\\": 1-5 or null,\\n        \\"physical_neglect_supervision_severity\\": 1-5 or null,\\n        \\"emotional_abuse_severity\\": 1-5 or null,\\n        \\"moral_legal_abuse_severity\\": 1-5 or null,\\n        \\"educational_abuse_severity\\": 1-5 or null\\n    }\\n}\\n\\nIMPORTANT RULES:\\n1. Only set severity ratings (1-5) for abuse types that are coded as true in binary_codings\\n2. Set severity ratings to null for abuse types coded as false\\n3. If any_maltreatment is false, all other binary codings should be false and all severity ratings should be null\\n4. Severity scale: 1=very mild, 2=mild, 3=moderate, 4=severe, 5=very severe\\n5. Base your codings strictly on what is described in the narratives"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:19:38,229 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:19:38,229 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:19:38,229 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:19:38,230 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:19:38,230 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T191938Z
+
+accept;content-type;host;x-amz-date
+fab75650f084c03d0cab1cb05e382748d657bd3c7e7269fbfeb8b3dbe6a39b27
+2025-08-18 15:19:38,230 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T191938Z
+20250818/us-east-1/bedrock/aws4_request
+9a5bfd438fd5cb25fca95fbfa9b5f3934c1b2352876b0060d9ecc6116d29de9f
+2025-08-18 15:19:38,230 - botocore.auth - DEBUG - Signature:
+29f5c3f7265f99e1d3056c9c6a577288655faa1b7fe59c195acf0762a2d15232
+2025-08-18 15:19:38,230 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:19:38,230 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:19:38,230 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T191938Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=29f5c3f7265f99e1d3056c9c6a577288655faa1b7fe59c195acf0762a2d15232', 'amz-sdk-invocation-id': b'03ff659f-8f76-4dc2-862a-9aed6e7e70af', 'amz-sdk-request': b'attempt=1', 'Content-Length': '4429'}>
+2025-08-18 15:19:38,230 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:19:41,059 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 990
+2025-08-18 15:19:41,059 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:19:39 GMT', 'Content-Type': 'application/json', 'Content-Length': '990', 'Connection': 'keep-alive', 'x-amzn-RequestId': '4e3021b0-cedf-491c-ba3f-7caab521b43c', 'X-Amzn-Bedrock-Invocation-Latency': '2792', 'X-Amzn-Bedrock-Output-Token-Count': '205', 'X-Amzn-Bedrock-Input-Token-Count': '1000'}
+2025-08-18 15:19:41,059 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5BD90>
+2025-08-18 15:19:41,059 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:19:41,060 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:19:41,169 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:19:41,169 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:19:41,169 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:19:41,169 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:19:41,169 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:19:41,169 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:19:41,169 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are a social worker creating realistic synthetic case narratives for research purposes. Generate narratives for a case involving physical abuse, hitting, beating, or other physical harm. The case should be severe in severity.\\n\\nPlease create four distinct narrative sections:\\n\\n1. MALTREATMENT_NARRATIVE: A detailed account (200-400 words) written by the case worker describing what transpired. Include allegations from various sources like neighbors, police, parents, siblings, friends, etc. This should be a comprehensive accounting of all available information about the incident(s).\\n\\n2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.\\n\\n3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.\\n\\n4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.\\n\\nMake the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.\\n\\nFormat your response as JSON with exactly these keys:\\n{\\n    \\"maltreatment_narrative\\": \\"...\\",\\n    \\"severity_narrative\\": \\"...\\", \\n    \\"risk_narrative\\": \\"...\\",\\n    \\"safety_assessment_narrative\\": \\"...\\"\\n}"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:19:41,171 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:19:41,171 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:19:41,171 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:19:41,171 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:19:41,171 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T191941Z
+
+accept;content-type;host;x-amz-date
+8ec587e2982011c35c46d46a3d357748a4da912e27159c49804d054fff5dd12b
+2025-08-18 15:19:41,172 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T191941Z
+20250818/us-east-1/bedrock/aws4_request
+e485d526dac430cc764b54b51321167162abd3864c6f9df6e877c192eb046f0b
+2025-08-18 15:19:41,172 - botocore.auth - DEBUG - Signature:
+a749177bc736cfa0d02e8e02a9c1e331c6b5b966b4312c8e408c17f92525f221
+2025-08-18 15:19:41,172 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:19:41,172 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:19:41,172 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T191941Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=a749177bc736cfa0d02e8e02a9c1e331c6b5b966b4312c8e408c17f92525f221', 'amz-sdk-invocation-id': b'a68a8da5-8a51-4d91-9814-b8b2b6b5a934', 'amz-sdk-request': b'attempt=1', 'Content-Length': '1680'}>
+2025-08-18 15:19:41,173 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:19:45,954 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 787
+2025-08-18 15:19:45,954 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:19:44 GMT', 'Content-Type': 'application/json', 'Content-Length': '787', 'Connection': 'keep-alive', 'x-amzn-RequestId': '1454a02c-6bcc-4511-a6c4-ee7b8b67d6e9', 'X-Amzn-Bedrock-Invocation-Latency': '4760', 'X-Amzn-Bedrock-Output-Token-Count': '110', 'X-Amzn-Bedrock-Input-Token-Count': '340'}
+2025-08-18 15:19:45,954 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5AFB0>
+2025-08-18 15:19:45,954 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:19:45,954 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:19:45,954 - bedrock_client - ERROR - Error generating narratives, attempt 1: No valid JSON found in response
+2025-08-18 15:19:47,804 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:19:47,804 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:19:47,804 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:19:47,804 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:19:47,804 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:19:47,804 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:19:47,804 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are a social worker creating realistic synthetic case narratives for research purposes. Generate narratives for a case involving physical abuse, hitting, beating, or other physical harm. The case should be severe in severity.\\n\\nPlease create four distinct narrative sections:\\n\\n1. MALTREATMENT_NARRATIVE: A detailed account (200-400 words) written by the case worker describing what transpired. Include allegations from various sources like neighbors, police, parents, siblings, friends, etc. This should be a comprehensive accounting of all available information about the incident(s).\\n\\n2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.\\n\\n3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.\\n\\n4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.\\n\\nMake the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.\\n\\nFormat your response as JSON with exactly these keys:\\n{\\n    \\"maltreatment_narrative\\": \\"...\\",\\n    \\"severity_narrative\\": \\"...\\", \\n    \\"risk_narrative\\": \\"...\\",\\n    \\"safety_assessment_narrative\\": \\"...\\"\\n}"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:19:47,804 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:19:47,804 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:19:47,804 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:19:47,804 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:19:47,804 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T191947Z
+
+accept;content-type;host;x-amz-date
+8ec587e2982011c35c46d46a3d357748a4da912e27159c49804d054fff5dd12b
+2025-08-18 15:19:47,804 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T191947Z
+20250818/us-east-1/bedrock/aws4_request
+697b03f24b2efe7ae07cf058f70cf6e4c1c2a01c7ce99a5770b0e7d5ba3961f0
+2025-08-18 15:19:47,804 - botocore.auth - DEBUG - Signature:
+5125e734bfce4bd7681fd9c97d70945a23e7f18bfab95f53ccf269d6de2bc045
+2025-08-18 15:19:47,804 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:19:47,804 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:19:47,804 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T191947Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=5125e734bfce4bd7681fd9c97d70945a23e7f18bfab95f53ccf269d6de2bc045', 'amz-sdk-invocation-id': b'feba198b-edef-485b-bd93-022d3aae87a7', 'amz-sdk-request': b'attempt=1', 'Content-Length': '1680'}>
+2025-08-18 15:19:47,804 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:19:53,341 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 737
+2025-08-18 15:19:53,341 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:19:52 GMT', 'Content-Type': 'application/json', 'Content-Length': '737', 'Connection': 'keep-alive', 'x-amzn-RequestId': '63a48389-a3ea-45a9-b59f-39f2d330c44f', 'X-Amzn-Bedrock-Invocation-Latency': '5500', 'X-Amzn-Bedrock-Output-Token-Count': '95', 'X-Amzn-Bedrock-Input-Token-Count': '340'}
+2025-08-18 15:19:53,341 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5BCA0>
+2025-08-18 15:19:53,341 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:19:53,341 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:19:53,341 - bedrock_client - ERROR - Error generating narratives, attempt 2: No valid JSON found in response
+2025-08-18 15:19:54,723 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:19:54,723 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:19:54,723 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:19:54,723 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:19:54,724 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:19:54,724 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:19:54,724 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are a social worker creating realistic synthetic case narratives for research purposes. Generate narratives for a case involving physical abuse, hitting, beating, or other physical harm. The case should be severe in severity.\\n\\nPlease create four distinct narrative sections:\\n\\n1. MALTREATMENT_NARRATIVE: A detailed account (200-400 words) written by the case worker describing what transpired. Include allegations from various sources like neighbors, police, parents, siblings, friends, etc. This should be a comprehensive accounting of all available information about the incident(s).\\n\\n2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.\\n\\n3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.\\n\\n4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.\\n\\nMake the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.\\n\\nFormat your response as JSON with exactly these keys:\\n{\\n    \\"maltreatment_narrative\\": \\"...\\",\\n    \\"severity_narrative\\": \\"...\\", \\n    \\"risk_narrative\\": \\"...\\",\\n    \\"safety_assessment_narrative\\": \\"...\\"\\n}"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:19:54,724 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:19:54,724 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:19:54,724 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:19:54,725 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:19:54,725 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T191954Z
+
+accept;content-type;host;x-amz-date
+8ec587e2982011c35c46d46a3d357748a4da912e27159c49804d054fff5dd12b
+2025-08-18 15:19:54,725 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T191954Z
+20250818/us-east-1/bedrock/aws4_request
+f6dd31e880c3e9fdf6bd490517598d14b819e098153beefd437d500e6c81cfec
+2025-08-18 15:19:54,725 - botocore.auth - DEBUG - Signature:
+cac38a25719c8e9085839cb68abc8a04f05fd48ff227f6b35bae810f702b4d5b
+2025-08-18 15:19:54,725 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:19:54,725 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:19:54,726 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T191954Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=cac38a25719c8e9085839cb68abc8a04f05fd48ff227f6b35bae810f702b4d5b', 'amz-sdk-invocation-id': b'72b84fff-34fa-4e39-b7f9-bec90bfc87e5', 'amz-sdk-request': b'attempt=1', 'Content-Length': '1680'}>
+2025-08-18 15:19:54,726 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:19:58,376 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 691
+2025-08-18 15:19:58,376 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:19:57 GMT', 'Content-Type': 'application/json', 'Content-Length': '691', 'Connection': 'keep-alive', 'x-amzn-RequestId': '1112b60d-6f46-48fb-8593-d1e0ae6ebafc', 'X-Amzn-Bedrock-Invocation-Latency': '3622', 'X-Amzn-Bedrock-Output-Token-Count': '90', 'X-Amzn-Bedrock-Input-Token-Count': '340'}
+2025-08-18 15:19:58,376 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5B400>
+2025-08-18 15:19:58,376 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:19:58,376 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:19:58,376 - bedrock_client - ERROR - Error generating narratives, attempt 3: No valid JSON found in response
+2025-08-18 15:19:58,376 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-18 15:19:58,376 - data_generator - WARNING - Generated invalid case for physical_abuse, skipping
+2025-08-18 15:19:58,483 - data_generator - INFO - Completed batch: 1 valid cases generated
+2025-08-18 15:19:58,483 - data_generator - INFO - Generating 1 cases of type: physical_neglect_failure
+2025-08-18 15:19:58,483 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:19:58,483 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:19:58,483 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:19:58,483 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:19:58,483 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:19:58,483 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:19:58,483 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are a social worker creating realistic synthetic case narratives for research purposes. Generate narratives for a general maltreatment case. The case should be mild in severity.\\n\\nPlease create four distinct narrative sections:\\n\\n1. MALTREATMENT_NARRATIVE: A detailed account (200-400 words) written by the case worker describing what transpired. Include allegations from various sources like neighbors, police, parents, siblings, friends, etc. This should be a comprehensive accounting of all available information about the incident(s).\\n\\n2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.\\n\\n3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.\\n\\n4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.\\n\\nMake the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.\\n\\nFormat your response as JSON with exactly these keys:\\n{\\n    \\"maltreatment_narrative\\": \\"...\\",\\n    \\"severity_narrative\\": \\"...\\", \\n    \\"risk_narrative\\": \\"...\\",\\n    \\"safety_assessment_narrative\\": \\"...\\"\\n}"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:19:58,483 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:19:58,483 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:19:58,483 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:19:58,483 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:19:58,483 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T191958Z
+
+accept;content-type;host;x-amz-date
+6e9c85f00c09b4be83bc11dc959813f65fa0d7fee37266c55363ec89e06d8127
+2025-08-18 15:19:58,483 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T191958Z
+20250818/us-east-1/bedrock/aws4_request
+aac19caaef275c1b7a27de47c96575f60888b2798872d9db88a903691e242f37
+2025-08-18 15:19:58,483 - botocore.auth - DEBUG - Signature:
+0cb316cab0e9b321dc8fe59539df7d0d2904460bd0f3d8afbdd13c5a3b6a7860
+2025-08-18 15:19:58,483 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:19:58,483 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:19:58,483 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T191958Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=0cb316cab0e9b321dc8fe59539df7d0d2904460bd0f3d8afbdd13c5a3b6a7860', 'amz-sdk-invocation-id': b'03ceda9e-2198-4037-9b16-49cbd2bb1f2e', 'amz-sdk-request': b'attempt=1', 'Content-Length': '1632'}>
+2025-08-18 15:19:58,483 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:20:21,712 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 3463
+2025-08-18 15:20:21,712 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:20:20 GMT', 'Content-Type': 'application/json', 'Content-Length': '3463', 'Connection': 'keep-alive', 'x-amzn-RequestId': '19b39372-7f05-4e0b-b827-4797f79750c8', 'X-Amzn-Bedrock-Invocation-Latency': '23186', 'X-Amzn-Bedrock-Output-Token-Count': '643', 'X-Amzn-Bedrock-Input-Token-Count': '333'}
+2025-08-18 15:20:21,712 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5BC40>
+2025-08-18 15:20:21,713 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:20:21,713 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:20:21,713 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:20:21,713 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:20:21,713 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:20:21,713 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:20:21,714 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:20:21,714 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:20:21,714 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are an expert social worker who codes maltreatment cases based on narrative data. Based on the following narratives, provide accurate binary codings and severity ratings.\\n\\nNARRATIVES:\\nMaltreatment Narrative: On March 15th, 2023, a report was filed by a concerned neighbor regarding potential neglect of a minor child. The neighbor, Mrs. Johnson, stated that she frequently hears loud arguments coming from the Smith household late at night, and has noticed the child, 8-year-old Michael Smith, playing outside unsupervised for extended periods. When questioned by the responding officer, Mr. and Mrs. Smith admitted to occasional heated disagreements but denied any form of physical altercation or abuse. However, Michael confided to the officer that his parents often \'forget\' to make him dinner, and he sometimes goes to bed hungry. Further investigation revealed that the home was generally unkempt, with limited food supplies and no evidence of proper sleeping arrangements for the child. Both parents work long hours and claim to be overwhelmed with financial stress, which they believe contributes to their neglectful behavior. Michael\'s teacher, Mrs. Roberts, corroborated that the child often appears tired and distracted in class, and has expressed concerns about his well-being on multiple occasions.\\n\\nSeverity Narrative: Based on the information gathered, this case can be classified as a mild to moderate instance of neglect. While there is no evidence of intentional malice or physical abuse, the repeated failure to provide adequate nutrition, supervision, and a suitable living environment for the child constitutes a form of neglect that could potentially have long-term adverse effects on the child\'s physical and emotional well-being. However, the parents\' acknowledgment of their shortcomings and the absence of more severe forms of maltreatment suggest that this case may be amenable to intervention and support services.\\n\\nRisk Narrative: The risk of continued or escalated maltreatment in this case is moderate. On one hand, the parents\' long work hours, financial struggles, and apparent lack of support systems increase the likelihood of ongoing neglectful behavior. Additionally, the presence of domestic conflicts and the parents\' seeming inability to prioritize the child\'s needs are concerning risk factors. However, their willingness to cooperate with authorities and the absence of more severe forms of abuse suggest that they may be receptive to guidance and support services aimed at improving their parenting skills and addressing the underlying issues contributing to the neglect.\\n\\nSafety Assessment Narrative: While the conditions described in this case are far from ideal, there is no immediate safety concern that would necessitate the child\'s removal from the home at this time. The neglect appears to stem primarily from the parents\' lack of resources and poor decision-making rather than intentional cruelty or malice towards the child. With the implementation of appropriate support services, such as parenting classes, counseling, and assistance in securing adequate food and housing, the child\'s safety and well-being can likely be addressed within the home environment. However, close monitoring and regular follow-ups will be essential to ensure that the situation does not deteriorate further.\\n\\nPlease provide codings in the following JSON format:\\n\\n{\\n    \\"binary_codings\\": {\\n        \\"any_maltreatment\\": true/false,\\n        \\"sexual_abuse\\": true/false,\\n        \\"physical_abuse\\": true/false,\\n        \\"physical_neglect_failure_to_provide\\": true/false,\\n        \\"physical_neglect_lack_of_supervision\\": true/false,\\n        \\"emotional_abuse\\": true/false,\\n        \\"moral_legal_abuse\\": true/false,\\n        \\"educational_abuse\\": true/false\\n    },\\n    \\"severity_codings\\": {\\n        \\"sexual_abuse_severity\\": 1-5 or null,\\n        \\"physical_abuse_severity\\": 1-5 or null,\\n        \\"physical_neglect_failure_severity\\": 1-5 or null,\\n        \\"physical_neglect_supervision_severity\\": 1-5 or null,\\n        \\"emotional_abuse_severity\\": 1-5 or null,\\n        \\"moral_legal_abuse_severity\\": 1-5 or null,\\n        \\"educational_abuse_severity\\": 1-5 or null\\n    }\\n}\\n\\nIMPORTANT RULES:\\n1. Only set severity ratings (1-5) for abuse types that are coded as true in binary_codings\\n2. Set severity ratings to null for abuse types coded as false\\n3. If any_maltreatment is false, all other binary codings should be false and all severity ratings should be null\\n4. Severity scale: 1=very mild, 2=mild, 3=moderate, 4=severe, 5=very severe\\n5. Base your codings strictly on what is described in the narratives"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:20:21,714 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:20:21,714 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:20:21,715 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:20:21,715 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:20:21,715 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T192021Z
+
+accept;content-type;host;x-amz-date
+9e86c80045ee8059045c51584e997e7041d987f6f0f33912517765d3d34b0572
+2025-08-18 15:20:21,715 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T192021Z
+20250818/us-east-1/bedrock/aws4_request
+1d73d4aebcfeccba2dfd66838508d896c5e81cfefeae586527410c27a30620d7
+2025-08-18 15:20:21,715 - botocore.auth - DEBUG - Signature:
+2aaab81f60a34ebceef5883ba615c465c933971efba7925e7eadf5ad47f5a036
+2025-08-18 15:20:21,715 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:20:21,715 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:20:21,715 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T192021Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=2aaab81f60a34ebceef5883ba615c465c933971efba7925e7eadf5ad47f5a036', 'amz-sdk-invocation-id': b'3203f15a-ad14-4711-9a87-e8f4d9b37ff2', 'amz-sdk-request': b'attempt=1', 'Content-Length': '4831'}>
+2025-08-18 15:20:21,715 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:20:28,886 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 986
+2025-08-18 15:20:28,886 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:20:27 GMT', 'Content-Type': 'application/json', 'Content-Length': '986', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'e9144b08-775c-4e1c-a42c-abffb9379fb7', 'X-Amzn-Bedrock-Invocation-Latency': '7138', 'X-Amzn-Bedrock-Output-Token-Count': '206', 'X-Amzn-Bedrock-Input-Token-Count': '1065'}
+2025-08-18 15:20:28,886 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5B550>
+2025-08-18 15:20:28,886 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:20:28,886 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:20:28,987 - data_generator - INFO - Completed batch: 1 valid cases generated
+2025-08-18 15:20:28,987 - data_generator - INFO - Generating 1 cases of type: emotional_abuse
+2025-08-18 15:20:28,987 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:20:28,987 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:20:28,987 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:20:28,987 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:20:28,987 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:20:28,987 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:20:28,987 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are a social worker creating realistic synthetic case narratives for research purposes. Generate narratives for a case involving emotional, psychological, or verbal abuse. The case should be moderate in severity.\\n\\nPlease create four distinct narrative sections:\\n\\n1. MALTREATMENT_NARRATIVE: A detailed account (200-400 words) written by the case worker describing what transpired. Include allegations from various sources like neighbors, police, parents, siblings, friends, etc. This should be a comprehensive accounting of all available information about the incident(s).\\n\\n2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.\\n\\n3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.\\n\\n4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.\\n\\nMake the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.\\n\\nFormat your response as JSON with exactly these keys:\\n{\\n    \\"maltreatment_narrative\\": \\"...\\",\\n    \\"severity_narrative\\": \\"...\\", \\n    \\"risk_narrative\\": \\"...\\",\\n    \\"safety_assessment_narrative\\": \\"...\\"\\n}"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:20:28,987 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:20:28,987 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:20:28,987 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:20:28,987 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:20:28,987 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T192028Z
+
+accept;content-type;host;x-amz-date
+f2e00f5406a7854b0fb6ce273513fc9aeccba8e7f2988d4f45ec607f36a6a299
+2025-08-18 15:20:28,987 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T192028Z
+20250818/us-east-1/bedrock/aws4_request
+b09ef16296e1c8e8dbc32ddf00f04004f3a01443d6915c7334f4039f8b34236b
+2025-08-18 15:20:28,987 - botocore.auth - DEBUG - Signature:
+1805c36e9af9d09224815c677abda50abb45b63ad31d3f78e83d5fbefa652c19
+2025-08-18 15:20:28,987 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:20:28,987 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:20:28,987 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T192028Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=1805c36e9af9d09224815c677abda50abb45b63ad31d3f78e83d5fbefa652c19', 'amz-sdk-invocation-id': b'f2c7bb59-eb15-44fe-9ef3-65b827407f04', 'amz-sdk-request': b'attempt=1', 'Content-Length': '1667'}>
+2025-08-18 15:20:28,987 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:20:58,057 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 3416
+2025-08-18 15:20:58,057 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:20:56 GMT', 'Content-Type': 'application/json', 'Content-Length': '3416', 'Connection': 'keep-alive', 'x-amzn-RequestId': '0e7b081e-35a7-4223-b643-94152b83eb91', 'X-Amzn-Bedrock-Invocation-Latency': '29042', 'X-Amzn-Bedrock-Output-Token-Count': '640', 'X-Amzn-Bedrock-Input-Token-Count': '336'}
+2025-08-18 15:20:58,057 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5BBE0>
+2025-08-18 15:20:58,057 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:20:58,057 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:20:58,057 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function generate_idempotent_uuid at 0x000002ACD7D3F520>
+2025-08-18 15:20:58,057 - botocore.hooks - DEBUG - Event before-parameter-build.bedrock-runtime.InvokeModel: calling handler <function _handle_request_validation_mode_member at 0x000002ACD7D5DC60>
+2025-08-18 15:20:58,057 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Region': 'us-east-1', 'UseDualStack': False, 'UseFIPS': False}
+2025-08-18 15:20:58,057 - botocore.regions - DEBUG - Endpoint provider result: https://bedrock-runtime.us-east-1.amazonaws.com
+2025-08-18 15:20:58,057 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function add_recursion_detection_header at 0x000002ACD7D3F0A0>
+2025-08-18 15:20:58,057 - botocore.hooks - DEBUG - Event before-call.bedrock-runtime.InvokeModel: calling handler <function inject_api_version_header_if_needed at 0x000002ACD7D5CDC0>
+2025-08-18 15:20:58,072 - botocore.endpoint - DEBUG - Making request for OperationModel(name=InvokeModel) with params: {'url_path': '/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'query_string': {}, 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'Accept': 'application/json', 'User-Agent': 'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11'}, 'body': b'{"anthropic_version": "bedrock-2023-05-31", "max_tokens": 2000, "messages": [{"role": "user", "content": "You are an expert social worker who codes maltreatment cases based on narrative data. Based on the following narratives, provide accurate binary codings and severity ratings.\\n\\nNARRATIVES:\\nMaltreatment Narrative: The Smith family case came to our attention through a report from a concerned neighbor who heard frequent yelling and crying from the home. Upon investigation, we learned that the father, John Smith, has been subjecting his 12-year-old son, Michael, to a pattern of emotional and verbal abuse. According to Michael\'s statements, his father often calls him degrading names like \'stupid,\' \'worthless,\' and \'disappointment.\' John also frequently belittles Michael\'s interests and achievements, telling him that he\'ll never amount to anything. The abuse seems to stem from John\'s own insecurities and unrealistic expectations for his son\'s academic and athletic performance. Michael\'s mother, Sarah, corroborated these accounts, admitting that John\'s behavior has caused significant distress and low self-esteem in their son. Sarah herself has been a victim of John\'s verbal outbursts, but she feels powerless to intervene due to financial dependence. Interviews with Michael\'s teachers revealed that he has become increasingly withdrawn and anxious at school, with a noticeable decline in his grades and social interactions.\\n\\nSeverity Narrative: This case of emotional and verbal abuse against Michael Smith is considered moderate in severity. While the maltreatment has not escalated to physical violence, the sustained pattern of denigrating language, belittling, and unrealistic expectations from John Smith has had a significant negative impact on Michael\'s emotional well-being and self-esteem. The involvement of both parents, with the mother feeling powerless to intervene, exacerbates the situation. Michael\'s declining academic performance and social withdrawal at school are concerning indicators of the abuse\'s effects on his overall functioning.\\n\\nRisk Narrative: Based on the available information, there is a moderate risk of continued emotional and verbal abuse towards Michael Smith. While the abuse has not escalated to physical violence, the sustained pattern of maltreatment from his father, John, and the lack of effective intervention from his mother, Sarah, suggest that the cycle of abuse is likely to continue without intervention. However, there are also protective factors that may mitigate the risk, such as Michael\'s support system at school and the potential for family counseling and parenting education to address John\'s behavior and improve the family dynamics.\\n\\nSafety Assessment Narrative: At present, there are no immediate safety concerns that would warrant Michael Smith\'s removal from the home. While the emotional and verbal abuse he has endured is undoubtedly harmful, there is no evidence of imminent physical danger or risk of severe neglect. However, it is crucial to address the ongoing psychological maltreatment and its impact on Michael\'s well-being. Protective measures should include regular monitoring of the home environment, referrals for family counseling and parenting education for John and Sarah, and ensuring that Michael has access to supportive resources at school and in the community to help mitigate the effects of the abuse.\\n\\nPlease provide codings in the following JSON format:\\n\\n{\\n    \\"binary_codings\\": {\\n        \\"any_maltreatment\\": true/false,\\n        \\"sexual_abuse\\": true/false,\\n        \\"physical_abuse\\": true/false,\\n        \\"physical_neglect_failure_to_provide\\": true/false,\\n        \\"physical_neglect_lack_of_supervision\\": true/false,\\n        \\"emotional_abuse\\": true/false,\\n        \\"moral_legal_abuse\\": true/false,\\n        \\"educational_abuse\\": true/false\\n    },\\n    \\"severity_codings\\": {\\n        \\"sexual_abuse_severity\\": 1-5 or null,\\n        \\"physical_abuse_severity\\": 1-5 or null,\\n        \\"physical_neglect_failure_severity\\": 1-5 or null,\\n        \\"physical_neglect_supervision_severity\\": 1-5 or null,\\n        \\"emotional_abuse_severity\\": 1-5 or null,\\n        \\"moral_legal_abuse_severity\\": 1-5 or null,\\n        \\"educational_abuse_severity\\": 1-5 or null\\n    }\\n}\\n\\nIMPORTANT RULES:\\n1. Only set severity ratings (1-5) for abuse types that are coded as true in binary_codings\\n2. Set severity ratings to null for abuse types coded as false\\n3. If any_maltreatment is false, all other binary codings should be false and all severity ratings should be null\\n4. Severity scale: 1=very mild, 2=mild, 3=moderate, 4=severe, 5=very severe\\n5. Base your codings strictly on what is described in the narratives"}], "temperature": 0.7, "top_p": 0.9}', 'url': 'https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x000002ACD8DE5A50>, 'has_streaming_input': True, 'auth_type': None, 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4', 'smithy.api#httpBearerAuth']}}
+2025-08-18 15:20:58,072 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x000002ACD8DE5300>>
+2025-08-18 15:20:58,072 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function set_operation_specific_signer at 0x000002ACD7D3F2E0>
+2025-08-18 15:20:58,072 - botocore.hooks - DEBUG - Event choose-signer.bedrock-runtime.InvokeModel: calling handler <function _set_auth_scheme_preference_signer at 0x000002ACD7D5DD80>
+2025-08-18 15:20:58,073 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-08-18 15:20:58,073 - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/model/anthropic.claude-3-sonnet-20240229-v1%253A0/invoke
+
+accept:application/json
+content-type:application/json
+host:bedrock-runtime.us-east-1.amazonaws.com
+x-amz-date:20250818T192058Z
+
+accept;content-type;host;x-amz-date
+c5f1cf997e7d58445c6c6e6640d1f7748a4fc11c44c2314c74165e46c8163064
+2025-08-18 15:20:58,073 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250818T192058Z
+20250818/us-east-1/bedrock/aws4_request
+684c7a1cc7e00e1345f66bbeef98ff3199b383c176fc1e09119d15c6b6a83725
+2025-08-18 15:20:58,073 - botocore.auth - DEBUG - Signature:
+80922318b1beab7d3766860edc5b2604cdd80417105223cd17b290d9ef8b7d1b
+2025-08-18 15:20:58,073 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x000002ACD8DE6B00>>
+2025-08-18 15:20:58,073 - botocore.hooks - DEBUG - Event request-created.bedrock-runtime.InvokeModel: calling handler <function add_retry_headers at 0x000002ACD7D5D5A0>
+2025-08-18 15:20:58,073 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=True, method=POST, url=https://bedrock-runtime.us-east-1.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke, headers={'Content-Type': b'application/json', 'Accept': b'application/json', 'User-Agent': b'Boto3/1.40.11 md/Botocore#1.40.11 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.10.0 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.40.11', 'X-Amz-Date': b'20250818T192058Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA2F7JWEHCUYAZKXW2/20250818/us-east-1/bedrock/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=80922318b1beab7d3766860edc5b2604cdd80417105223cd17b290d9ef8b7d1b', 'amz-sdk-invocation-id': b'6b342c37-2071-418a-9488-42265f75c9e3', 'amz-sdk-request': b'attempt=1', 'Content-Length': '4784'}>
+2025-08-18 15:20:58,073 - botocore.httpsession - DEBUG - Certificate path: C:\Users\ajwin\Projects\PSU\mcs_synthetic\.venv\lib\site-packages\botocore\cacert.pem
+2025-08-18 15:21:04,520 - urllib3.connectionpool - DEBUG - https://bedrock-runtime.us-east-1.amazonaws.com:443 "POST /model/anthropic.claude-3-sonnet-20240229-v1%3A0/invoke HTTP/1.1" 200 990
+2025-08-18 15:21:04,520 - botocore.parsers - DEBUG - Response headers: {'Date': 'Mon, 18 Aug 2025 19:21:03 GMT', 'Content-Type': 'application/json', 'Content-Length': '990', 'Connection': 'keep-alive', 'x-amzn-RequestId': '31861bcc-d913-4fff-a892-17e4689430e1', 'X-Amzn-Bedrock-Invocation-Latency': '6423', 'X-Amzn-Bedrock-Output-Token-Count': '205', 'X-Amzn-Bedrock-Input-Token-Count': '1062'}
+2025-08-18 15:21:04,520 - botocore.parsers - DEBUG - Response body:
+<botocore.response.StreamingBody object at 0x000002ACD8F5B640>
+2025-08-18 15:21:04,520 - botocore.hooks - DEBUG - Event needs-retry.bedrock-runtime.InvokeModel: calling handler <botocore.retryhandler.RetryHandler object at 0x000002ACD8DE6FE0>
+2025-08-18 15:21:04,520 - botocore.retryhandler - DEBUG - No retry needed.
+2025-08-18 15:21:04,623 - data_generator - INFO - Completed batch: 1 valid cases generated
+2025-08-18 15:21:04,626 - data_generator - INFO - Dataset saved to: output\synthetic_maltreatment_data.csv
+2025-08-18 15:21:04,626 - data_generator - INFO - Generated 3 total cases
+2025-08-18 15:21:04,626 - __main__ - INFO - Generation Statistics:
+2025-08-18 15:21:04,626 - __main__ - INFO - {
+  "total_cases": 3,
+  "binary_coding_counts": {
+    "any_maltreatment": 3,
+    "sexual_abuse": 0,
+    "physical_abuse": 1,
+    "physical_neglect_failure_to_provide": 1,
+    "physical_neglect_lack_of_supervision": 1,
+    "emotional_abuse": 1,
+    "moral_legal_abuse": 0,
+    "educational_abuse": 0
+  },
+  "severity_distributions": {
+    "physical_abuse_severity": {
+      "count": 1,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "physical_neglect_failure_severity": {
+      "count": 1,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "physical_neglect_supervision_severity": {
+      "count": 1,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "emotional_abuse_severity": {
+      "count": 1,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    }
+  },
+  "validation_results": {
+    "valid_cases": 3,
+    "invalid_cases": 0
+  }
+}
+2025-08-18 15:21:04,626 - __main__ - INFO - Dataset generation completed successfully!
+2025-08-18 15:21:04,626 - __main__ - INFO - Dataset saved to: ./output/synthetic_maltreatment_data.csv
+2025-08-18 15:21:04,626 - __main__ - INFO - Statistics saved to: output\generation_stats_20250818_152104.json
+2025-08-18 15:21:04,626 - __main__ - INFO - Total cases generated: 3

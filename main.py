@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
 import os
+from typing import Optional
 
 from models import GenerationConfig
 from data_generator import SyntheticDataGenerator
@@ -29,7 +30,7 @@ def setup_logging(log_level: str = "INFO") -> None:
     )
 
 
-def load_config(config_path: str = None) -> GenerationConfig:
+def load_config(config_path: Optional[str] = None) -> GenerationConfig:
     """Load configuration from file or environment variables"""
     
     if config_path and Path(config_path).exists():

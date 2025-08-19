@@ -1,6 +1,7 @@
 import boto3
 import json
 import logging
+import re
 from typing import Dict, Any, Optional
 from botocore.exceptions import ClientError
 import time
@@ -102,7 +103,8 @@ Please create four distinct narrative sections:
 
 Make the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.
 
-Format your response as JSON with exactly these keys:
+IMPORTANT: Format your response as valid JSON only. Do not include any text before or after the JSON. Ensure all strings are properly escaped and contain no unescaped control characters (newlines, tabs, etc.).
+
 {{
     "maltreatment_narrative": "...",
     "severity_narrative": "...", 
@@ -155,7 +157,8 @@ IMPORTANT RULES:
 2. Set severity ratings to null for abuse types coded as false
 3. If any_maltreatment is false, all other binary codings should be false and all severity ratings should be null
 4. Severity scale: 1=very mild, 2=mild, 3=moderate, 4=severe, 5=very severe
-5. Base your codings strictly on what is described in the narratives"""
+5. Base your codings strictly on what is described in the narratives
+6. IMPORTANT: Return ONLY valid JSON with no additional text. Ensure all strings are properly escaped."""
 
         return prompt
     
@@ -208,6 +211,23 @@ IMPORTANT RULES:
             self.logger.error(f"Unexpected error calling Bedrock: {str(e)}")
             raise
     
+<<<<<<< HEAD
+=======
+    def _clean_json_string(self, json_str: str) -> str:
+        """Clean JSON string by removing/escaping invalid control characters"""
+        # Remove or replace common problematic control characters
+        json_str = json_str.replace('\n', '\\n')  # Escape newlines
+        json_str = json_str.replace('\r', '\\r')  # Escape carriage returns  
+        json_str = json_str.replace('\t', '\\t')  # Escape tabs
+        json_str = json_str.replace('\b', '\\b')  # Escape backspaces
+        json_str = json_str.replace('\f', '\\f')  # Escape form feeds
+        
+        # Remove other control characters (ASCII 0-31 except those we escaped above)
+        json_str = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', json_str)
+        
+        return json_str
+    
+>>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
     def _parse_narrative_response(self, response: str) -> Dict[str, str]:
         """Parse narrative response from Bedrock"""
         try:
@@ -217,12 +237,22 @@ IMPORTANT RULES:
             
             if start_idx >= 0 and end_idx > start_idx:
                 json_str = response[start_idx:end_idx]
+<<<<<<< HEAD
+=======
+                # Clean the JSON string before parsing
+                json_str = self._clean_json_string(json_str)
+>>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
                 return json.loads(json_str)
             else:
                 raise ValueError("No valid JSON found in response")
                 
         except json.JSONDecodeError as e:
             self.logger.error(f"Failed to parse narrative JSON: {str(e)}")
+<<<<<<< HEAD
+=======
+            # Log the problematic JSON for debugging
+            self.logger.debug(f"Problematic JSON string: {json_str[:500]}...")
+>>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
             raise
     
     def _parse_coding_response(self, response: str) -> Dict[str, Any]:
@@ -234,12 +264,22 @@ IMPORTANT RULES:
             
             if start_idx >= 0 and end_idx > start_idx:
                 json_str = response[start_idx:end_idx]
+<<<<<<< HEAD
+=======
+                # Clean the JSON string before parsing
+                json_str = self._clean_json_string(json_str)
+>>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
                 return json.loads(json_str)
             else:
                 raise ValueError("No valid JSON found in response")
                 
         except json.JSONDecodeError as e:
             self.logger.error(f"Failed to parse coding JSON: {str(e)}")
+<<<<<<< HEAD
+=======
+            # Log the problematic JSON for debugging
+            self.logger.debug(f"Problematic JSON string: {json_str[:500]}...")
+>>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
             raise
     
     def _validate_narratives(self, narratives: Dict[str, str]) -> bool:

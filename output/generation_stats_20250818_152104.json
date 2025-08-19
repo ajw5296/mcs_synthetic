@@ -1,0 +1,63 @@
+{
+  "total_cases": 3,
+  "binary_coding_counts": {
+    "any_maltreatment": 3,
+    "sexual_abuse": 0,
+    "physical_abuse": 1,
+    "physical_neglect_failure_to_provide": 1,
+    "physical_neglect_lack_of_supervision": 1,
+    "emotional_abuse": 1,
+    "moral_legal_abuse": 0,
+    "educational_abuse": 0
+  },
+  "severity_distributions": {
+    "physical_abuse_severity": {
+      "count": 1,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "physical_neglect_failure_severity": {
+      "count": 1,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "physical_neglect_supervision_severity": {
+      "count": 1,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    },
+    "emotional_abuse_severity": {
+      "count": 1,
+      "mean": 3.0,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0
+      }
+    }
+  },
+  "validation_results": {
+    "valid_cases": 3,
+    "invalid_cases": 0
+  }
+}
