@@ -96,8 +96,8 @@ class GenerationConfig(BaseModel):
     # Severity distribution for each abuse type
     severity_distribution: Dict[int, float] = Field(default={
         1: 0.05,  # 5% severity 1 (very mild)
-        2: 0.15,  # 15% severity 2 (mild)
-        3: 0.35,  # 35% severity 3 (moderate)
+        2: 0.20,  # 20% severity 2 (mild)
+        3: 0.30,  # 30% severity 3 (moderate)
         4: 0.30,  # 30% severity 4 (severe)
         5: 0.15,  # 15% severity 5 (very severe)
     })

@@ -11,9 +11,11 @@ import random
 class BedrockClient:
     """AWS Bedrock client for generating synthetic data"""
     
-    def __init__(self, region: str = "us-east-1", model_id: str = "anthropic.claude-3-sonnet-20240229-v1:0"):
+    def __init__(self, region: str = "us-east-1", model_id: str = "anthropic.claude-3-sonnet-20240229-v1:0", 
+                 project_name: str = "mcs-synthetic-data"):
         self.region = region
         self.model_id = model_id
+        self.project_name = project_name
         self.client = boto3.client('bedrock-runtime', region_name=region)
         self.logger = logging.getLogger(__name__)
         
@@ -97,9 +99,9 @@ Please create four distinct narrative sections:
 
 2. SEVERITY_NARRATIVE: A more concise assessment (100-200 words) by the case worker evaluating how severe the case is. Focus on the key factors that determine severity.
 
-3. RISK_NARRATIVE: An assessment (100-200 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.
+3. RISK_NARRATIVE: An assessment (50-150 words) of whether the child is at risk of future abuse. Consider protective factors and risk factors.
 
-4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (100-200 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.
+4. SAFETY_ASSESSMENT_NARRATIVE: An evaluation (50-100 words) of whether the child is currently safe. Focus on immediate safety concerns and protective measures.
 
 Make the narratives realistic and consistent with each other. Use professional social work language but make it authentic. Vary the writing style slightly between narratives as different sections might be written at different times.
 
@@ -211,25 +213,30 @@ IMPORTANT RULES:
             self.logger.error(f"Unexpected error calling Bedrock: {str(e)}")
             raise
     
-<<<<<<< HEAD
-=======
     def _clean_json_string(self, json_str: str) -> str:
-        """Clean JSON string by removing/escaping invalid control characters"""
-        # Remove or replace common problematic control characters
-        json_str = json_str.replace('\n', '\\n')  # Escape newlines
-        json_str = json_str.replace('\r', '\\r')  # Escape carriage returns  
-        json_str = json_str.replace('\t', '\\t')  # Escape tabs
-        json_str = json_str.replace('\b', '\\b')  # Escape backspaces
-        json_str = json_str.replace('\f', '\\f')  # Escape form feeds
+        """Clean JSON string by removing/escaping invalid control characters and fixing common issues"""
+        # First, remove literal newlines, carriage returns, and tabs from within the JSON
+        # These break JSON parsing when they appear as literal characters in strings
+        json_str = json_str.replace('\n', ' ')  # Replace literal newlines with spaces
+        json_str = json_str.replace('\r', ' ')  # Replace literal carriage returns with spaces
+        json_str = json_str.replace('\t', ' ')  # Replace literal tabs with spaces
         
-        # Remove other control characters (ASCII 0-31 except those we escaped above)
-        json_str = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', json_str)
+        # Remove other control characters (ASCII 0-31)
+        json_str = re.sub(r'[\x00-\x1F\x7F]', '', json_str)
+        
+        # Fix common JSON formatting issues
+        # Replace single quotes with double quotes (but be careful about contractions)
+        json_str = re.sub(r"'([^']*?)':", r'"\1":', json_str)  # Fix keys with single quotes
+        json_str = re.sub(r":\s*'([^']*?)'", r': "\1"', json_str)  # Fix values with single quotes
+        
+        # Clean up excessive whitespace that might have been created
+        json_str = re.sub(r'\s+', ' ', json_str)  # Replace multiple spaces with single space
         
         return json_str
     
->>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
     def _parse_narrative_response(self, response: str) -> Dict[str, str]:
         """Parse narrative response from Bedrock"""
+        json_str = ""
         try:
             # Try to extract JSON from response
             start_idx = response.find('{')
@@ -237,26 +244,26 @@ IMPORTANT RULES:
             
             if start_idx >= 0 and end_idx > start_idx:
                 json_str = response[start_idx:end_idx]
-<<<<<<< HEAD
-=======
+                self.logger.debug(f"Raw JSON extracted: {json_str[:200]}...")
+                
                 # Clean the JSON string before parsing
-                json_str = self._clean_json_string(json_str)
->>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
-                return json.loads(json_str)
+                cleaned_json_str = self._clean_json_string(json_str)
+                self.logger.debug(f"Cleaned JSON: {cleaned_json_str[:200]}...")
+                
+                return json.loads(cleaned_json_str)
             else:
+                self.logger.error(f"No JSON brackets found in response: {response[:500]}...")
                 raise ValueError("No valid JSON found in response")
                 
         except json.JSONDecodeError as e:
             self.logger.error(f"Failed to parse narrative JSON: {str(e)}")
-<<<<<<< HEAD
-=======
-            # Log the problematic JSON for debugging
-            self.logger.debug(f"Problematic JSON string: {json_str[:500]}...")
->>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
+            self.logger.error(f"Raw response: {response[:1000]}...")
+            self.logger.error(f"Extracted JSON string: {json_str[:500]}...")
             raise
     
     def _parse_coding_response(self, response: str) -> Dict[str, Any]:
         """Parse coding response from Bedrock"""
+        json_str = ""
         try:
             # Try to extract JSON from response
             start_idx = response.find('{')
@@ -264,22 +271,21 @@ IMPORTANT RULES:
             
             if start_idx >= 0 and end_idx > start_idx:
                 json_str = response[start_idx:end_idx]
-<<<<<<< HEAD
-=======
+                self.logger.debug(f"Raw JSON extracted: {json_str[:200]}...")
+                
                 # Clean the JSON string before parsing
-                json_str = self._clean_json_string(json_str)
->>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
-                return json.loads(json_str)
+                cleaned_json_str = self._clean_json_string(json_str)
+                self.logger.debug(f"Cleaned JSON: {cleaned_json_str[:200]}...")
+                
+                return json.loads(cleaned_json_str)
             else:
+                self.logger.error(f"No JSON brackets found in response: {response[:500]}...")
                 raise ValueError("No valid JSON found in response")
                 
         except json.JSONDecodeError as e:
             self.logger.error(f"Failed to parse coding JSON: {str(e)}")
-<<<<<<< HEAD
-=======
-            # Log the problematic JSON for debugging
-            self.logger.debug(f"Problematic JSON string: {json_str[:500]}...")
->>>>>>> 68d14facca3faf4a2ae3419a0cc26c59b394b129
+            self.logger.error(f"Raw response: {response[:1000]}...")
+            self.logger.error(f"Extracted JSON string: {json_str[:500]}...")
             raise
     
     def _validate_narratives(self, narratives: Dict[str, str]) -> bool:

@@ -1,0 +1,89 @@
+2025-08-19 16:12:53,589 - __main__ - INFO - Starting synthetic data generation with config: total_cases=5 batch_size=10 model_id='anthropic.claude-3-sonnet-20240229-v1:0' region='us-east-1' max_retries=3 abuse_type_distribution={'no_maltreatment': 0.15, 'sexual_abuse': 0.12, 'physical_abuse': 0.2, 'physical_neglect_failure': 0.15, 'physical_neglect_supervision': 0.13, 'emotional_abuse': 0.1, 'moral_legal_abuse': 0.08, 'educational_abuse': 0.07} severity_distribution={1: 0.05, 2: 0.2, 3: 0.3, 4: 0.3, 5: 0.15}
+2025-08-19 16:12:53,620 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-08-19 16:12:53,793 - data_generator - INFO - Starting generation of 5 cases
+2025-08-19 16:12:53,795 - data_generator - INFO - Generating 1 cases of type: no_maltreatment
+2025-08-19 16:12:53,799 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:12:53,799 - bedrock_client - ERROR - Error generating narratives, attempt 1: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:12:55,396 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:12:55,396 - bedrock_client - ERROR - Error generating narratives, attempt 2: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:12:57,609 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:12:57,609 - bedrock_client - ERROR - Error generating narratives, attempt 3: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:12:57,609 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 16:12:57,609 - data_generator - WARNING - Generated invalid case for no_maltreatment, skipping
+2025-08-19 16:12:57,724 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-19 16:12:57,724 - data_generator - INFO - Generating 2 cases of type: physical_abuse
+2025-08-19 16:12:57,724 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:12:57,724 - bedrock_client - ERROR - Error generating narratives, attempt 1: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:12:59,581 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:12:59,581 - bedrock_client - ERROR - Error generating narratives, attempt 2: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:01,177 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:01,177 - bedrock_client - ERROR - Error generating narratives, attempt 3: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:01,177 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 16:13:01,177 - data_generator - WARNING - Generated invalid case for physical_abuse, skipping
+2025-08-19 16:13:01,280 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:01,280 - bedrock_client - ERROR - Error generating narratives, attempt 1: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:04,063 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:04,063 - bedrock_client - ERROR - Error generating narratives, attempt 2: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:05,691 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:05,691 - bedrock_client - ERROR - Error generating narratives, attempt 3: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:05,692 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 16:13:05,692 - data_generator - WARNING - Generated invalid case for physical_abuse, skipping
+2025-08-19 16:13:05,793 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-19 16:13:05,793 - data_generator - INFO - Generating 1 cases of type: physical_neglect_failure
+2025-08-19 16:13:05,793 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:05,793 - bedrock_client - ERROR - Error generating narratives, attempt 1: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:06,859 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:06,859 - bedrock_client - ERROR - Error generating narratives, attempt 2: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:09,795 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:09,795 - bedrock_client - ERROR - Error generating narratives, attempt 3: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:09,795 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 16:13:09,795 - data_generator - WARNING - Generated invalid case for physical_neglect_failure, skipping
+2025-08-19 16:13:09,898 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-19 16:13:09,898 - data_generator - INFO - Generating 1 cases of type: educational_abuse
+2025-08-19 16:13:09,899 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:09,899 - bedrock_client - ERROR - Error generating narratives, attempt 1: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:12,878 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:12,878 - bedrock_client - ERROR - Error generating narratives, attempt 2: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:15,858 - bedrock_client - ERROR - Unexpected error calling Bedrock: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:15,858 - bedrock_client - ERROR - Error generating narratives, attempt 3: Parameter validation failed:
+Unknown parameter in input: "tags", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency
+2025-08-19 16:13:15,858 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 16:13:15,858 - data_generator - WARNING - Generated invalid case for educational_abuse, skipping
+2025-08-19 16:13:15,959 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-19 16:13:15,959 - data_generator - INFO - Dataset saved to: output\synthetic_maltreatment_data_20250819_161315.csv
+2025-08-19 16:13:15,959 - data_generator - INFO - Generated 0 total cases
+2025-08-19 16:13:15,959 - __main__ - INFO - Generation Statistics:
+2025-08-19 16:13:15,959 - __main__ - INFO - {}
+2025-08-19 16:13:15,959 - __main__ - INFO - Dataset generation completed successfully!
+2025-08-19 16:13:15,959 - __main__ - INFO - Dataset saved to: ./output/synthetic_maltreatment_data.csv
+2025-08-19 16:13:15,959 - __main__ - INFO - Statistics saved to: output\generation_stats_20250819_161315.json
+2025-08-19 16:13:15,959 - __main__ - INFO - Total cases generated: 0

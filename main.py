@@ -99,8 +99,10 @@ def main():
         logger.info("Generation Statistics:")
         logger.info(json.dumps(stats, indent=2))
         
-        # Save statistics
-        stats_path = output_path.parent / f"generation_stats_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        # Save statistics to separate folder
+        stats_dir = Path("./output/stats")
+        stats_dir.mkdir(parents=True, exist_ok=True)
+        stats_path = stats_dir / f"generation_stats_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         with open(stats_path, 'w') as f:
             json.dump(stats, f, indent=2)
         

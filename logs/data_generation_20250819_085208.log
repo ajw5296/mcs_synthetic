@@ -1,0 +1,27 @@
+2025-08-19 08:52:08,453 - __main__ - INFO - Starting synthetic data generation with config: total_cases=5 batch_size=2 model_id='anthropic.claude-3-sonnet-20240229-v1:0' region='us-east-1' max_retries=3 abuse_type_distribution={'no_maltreatment': 0.15, 'sexual_abuse': 0.12, 'physical_abuse': 0.2, 'physical_neglect_failure': 0.15, 'physical_neglect_supervision': 0.13, 'emotional_abuse': 0.1, 'moral_legal_abuse': 0.08, 'educational_abuse': 0.07} severity_distribution={1: 0.05, 2: 0.2, 3: 0.3, 4: 0.3, 5: 0.15}
+2025-08-19 08:52:08,474 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-08-19 08:52:08,623 - data_generator - INFO - Starting generation of 5 cases
+2025-08-19 08:52:08,623 - data_generator - INFO - Generating 1 cases of type: physical_abuse
+2025-08-19 08:52:42,572 - bedrock_client - ERROR - Failed to parse narrative JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:52:42,572 - bedrock_client - ERROR - Error generating narratives, attempt 1: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:53:12,454 - bedrock_client - ERROR - Failed to parse narrative JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:53:12,454 - bedrock_client - ERROR - Error generating narratives, attempt 2: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:53:41,633 - bedrock_client - ERROR - Failed to parse narrative JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:53:41,633 - bedrock_client - ERROR - Error generating narratives, attempt 3: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:53:41,633 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 08:53:41,633 - data_generator - WARNING - Generated invalid case for physical_abuse, skipping
+2025-08-19 08:53:41,738 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-19 08:53:41,738 - data_generator - INFO - Generating 1 cases of type: emotional_abuse
+2025-08-19 08:54:11,503 - bedrock_client - ERROR - Failed to parse narrative JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:54:11,503 - bedrock_client - ERROR - Error generating narratives, attempt 1: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:54:43,113 - bedrock_client - ERROR - Failed to parse narrative JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:54:43,113 - bedrock_client - ERROR - Error generating narratives, attempt 2: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:55:12,744 - bedrock_client - ERROR - Failed to parse narrative JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:55:12,745 - bedrock_client - ERROR - Error generating narratives, attempt 3: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:55:12,745 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 08:55:12,745 - data_generator - WARNING - Generated invalid case for emotional_abuse, skipping
+2025-08-19 08:55:12,851 - data_generator - INFO - Completed batch: 0 valid cases generated
+2025-08-19 08:55:12,852 - data_generator - INFO - Generating 1 cases of type: moral_legal_abuse
+2025-08-19 08:55:49,774 - bedrock_client - ERROR - Failed to parse narrative JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:55:49,774 - bedrock_client - ERROR - Error generating narratives, attempt 1: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 08:56:18,562 - __main__ - INFO - Generation interrupted by user

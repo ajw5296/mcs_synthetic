@@ -8,6 +8,7 @@ from pathlib import Path
 from tqdm import tqdm
 import random
 import time
+from datetime import datetime
 
 from models import (
     MaltreatmentCase, NarrativeData, BinaryCodings, 
@@ -45,9 +46,12 @@ class SyntheticDataGenerator:
         # Convert to DataFrame
         df = self._convert_to_dataframe()
         
-        # Save to file if output path provided
-        if output_path:
-            self._save_dataset(df, output_path)
+        # Always save to CSV with default name if no output path provided
+        if not output_path:
+            output_path = "./output/datasets/synthetic_maltreatment_data.csv"
+        
+        # Save to file
+        self._save_dataset(df, output_path)
             
         self.logger.info(f"Generated {len(self.generated_cases)} total cases")
         return df
@@ -184,24 +188,34 @@ class SyntheticDataGenerator:
         return pd.DataFrame(data)
     
     def _save_dataset(self, df: pd.DataFrame, output_path: str):
-        """Save dataset to file"""
+        """Save dataset to file with timestamp"""
         
-        output_path = Path(output_path)
-        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path_obj = Path(output_path)
         
-        if output_path.suffix == '.csv':
-            df.to_csv(output_path, index=False)
-        elif output_path.suffix in ['.xlsx', '.xls']:
-            df.to_excel(output_path, index=False)
-        elif output_path.suffix == '.json':
-            df.to_json(output_path, orient='records', indent=2)
-        elif output_path.suffix == '.parquet':
-            df.to_parquet(output_path, index=False)
+        # Add timestamp to filename
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        stem = output_path_obj.stem
+        suffix = output_path_obj.suffix or '.csv'
+        
+        # Create timestamped filename: original_name_YYYYMMDD_HHMMSS.ext
+        timestamped_name = f"{stem}_{timestamp}{suffix}"
+        final_output_path = output_path_obj.parent / timestamped_name
+        
+        final_output_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        if final_output_path.suffix == '.csv':
+            df.to_csv(final_output_path, index=False)
+        elif final_output_path.suffix in ['.xlsx', '.xls']:
+            df.to_excel(final_output_path, index=False)
+        elif final_output_path.suffix == '.json':
+            df.to_json(final_output_path, orient='records', indent=2)
+        elif final_output_path.suffix == '.parquet':
+            df.to_parquet(final_output_path, index=False)
         else:
             # Default to CSV
-            df.to_csv(output_path.with_suffix('.csv'), index=False)
+            df.to_csv(final_output_path.with_suffix('.csv'), index=False)
         
-        self.logger.info(f"Dataset saved to: {output_path}")
+        self.logger.info(f"Dataset saved to: {final_output_path}")
     
     def get_generation_stats(self) -> Dict[str, Any]:
         """Get statistics about the generated dataset"""

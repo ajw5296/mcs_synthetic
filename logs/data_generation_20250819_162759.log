@@ -1,0 +1,146 @@
+2025-08-19 16:27:59,539 - __main__ - INFO - Starting synthetic data generation with config: total_cases=50 batch_size=10 model_id='anthropic.claude-3-sonnet-20240229-v1:0' region='us-east-1' max_retries=3 abuse_type_distribution={'no_maltreatment': 0.15, 'sexual_abuse': 0.12, 'physical_abuse': 0.2, 'physical_neglect_failure': 0.15, 'physical_neglect_supervision': 0.13, 'emotional_abuse': 0.1, 'moral_legal_abuse': 0.08, 'educational_abuse': 0.07} severity_distribution={1: 0.05, 2: 0.2, 3: 0.3, 4: 0.3, 5: 0.15}
+2025-08-19 16:27:59,563 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-08-19 16:27:59,683 - data_generator - INFO - Starting generation of 50 cases
+2025-08-19 16:27:59,683 - data_generator - INFO - Generating 8 cases of type: no_maltreatment
+2025-08-19 16:33:15,262 - data_generator - INFO - Completed batch: 8 valid cases generated
+2025-08-19 16:33:15,262 - data_generator - INFO - Generating 6 cases of type: sexual_abuse
+2025-08-19 16:33:19,984 - bedrock_client - ERROR - No JSON brackets found in response: I'm sorry, but I cannot generate content involving the sexual exploitation or abuse of minors under any circumstances. That would be highly unethical and illegal. I do not produce any kind of exploitative or abusive material related to children. I hope you can understand my firm stance on this. Please do not ask me to engage with this topic again....
+2025-08-19 16:33:19,984 - bedrock_client - ERROR - Error generating narratives, attempt 1: No valid JSON found in response
+2025-08-19 16:33:30,268 - bedrock_client - ERROR - No JSON brackets found in response: I'm sorry, but I cannot generate narratives involving the sexual abuse or exploitation of children under any circumstances. That would involve producing extremely disturbing and illegal content related to the sexual victimization of minors, which is something I absolutely cannot do. I understand this is for research purposes, but I have strict ethical constraints that prevent me from engaging with anything involving the exploitation or sexualization of minors. I apologize, but I must refuse this...
+2025-08-19 16:33:30,268 - bedrock_client - ERROR - Error generating narratives, attempt 2: No valid JSON found in response
+2025-08-19 16:33:40,595 - bedrock_client - ERROR - No JSON brackets found in response: I'm sorry, but I cannot generate narratives involving the sexual exploitation or abuse of children under any circumstances. That would involve producing content related to the exploitation of minors, which is strictly forbidden for me and not something I will ever create. I understand this was for research purposes, but I have to maintain a firm ethical stance against this type of material. I hope you can understand my position on this. Please do not ask me to engage with this topic again....
+2025-08-19 16:33:40,596 - bedrock_client - ERROR - Error generating narratives, attempt 3: No valid JSON found in response
+2025-08-19 16:33:40,596 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 16:33:40,596 - data_generator - WARNING - Generated invalid case for sexual_abuse, skipping
+2025-08-19 16:36:00,426 - bedrock_client - ERROR - No JSON brackets found in response: I'm sorry, but I cannot generate content involving the sexual exploitation or abuse of minors under any circumstances. This is not something I will produce as it relates to the exploitation of children, which I absolutely do not engage with. I understand this is for research purposes, but I have to maintain a strict ethical stance against this type of material. I hope you can understand my position on this. Please let me know if there are other topics I can assist with instead....
+2025-08-19 16:36:00,427 - bedrock_client - ERROR - Error generating narratives, attempt 1: No valid JSON found in response
+2025-08-19 16:36:06,056 - bedrock_client - ERROR - No JSON brackets found in response: I'm sorry, but I cannot generate narratives involving the sexual abuse or exploitation of children under any circumstances. That would involve producing content related to the exploitation of minors, which is completely off-limits and not something I'll participate in. I understand this is for research purposes, but I have to draw a firm line when it comes to anything involving the abuse of children. I apologize that I cannot assist with this request....
+2025-08-19 16:36:06,056 - bedrock_client - ERROR - Error generating narratives, attempt 2: No valid JSON found in response
+2025-08-19 16:36:16,288 - bedrock_client - ERROR - No JSON brackets found in response: I'm sorry, but I cannot generate narratives involving the sexual abuse or exploitation of children under any circumstances. That would involve producing content related to the exploitation of minors, which is completely off-limits and not something I will do. I understand this is for research purposes, but I have to draw a firm line when it comes to anything involving the abuse of children. I hope you can understand my position on this. Please do not ask me to engage with this topic again....
+2025-08-19 16:36:16,288 - bedrock_client - ERROR - Error generating narratives, attempt 3: No valid JSON found in response
+2025-08-19 16:36:16,289 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 16:36:16,289 - data_generator - WARNING - Generated invalid case for sexual_abuse, skipping
+2025-08-19 16:36:25,917 - bedrock_client - ERROR - No JSON brackets found in response: I'm sorry, but I cannot generate narratives involving the sexual abuse or exploitation of children under any circumstances. That would involve producing extremely unethical and illegal content related to the abuse of minors, which I absolutely refuse to do. I understand this is for research purposes, but I have strict ethical boundaries that prevent me from engaging with anything involving the exploitation of children. Please do not ask me to do this again. If you need other types of synthetic c...
+2025-08-19 16:36:25,917 - bedrock_client - ERROR - Error generating narratives, attempt 1: No valid JSON found in response
+2025-08-19 16:36:32,738 - bedrock_client - ERROR - No JSON brackets found in response: I'm sorry, but I cannot generate narratives involving the sexual abuse or exploitation of children under any circumstances. That would involve producing content related to the exploitation of minors, which is not something I will ever engage in or assist with. I understand this is for research purposes, but I have strict ethical guidelines that prevent me from creating this type of material. Please do not ask me to do this again. If you need other types of case narratives that do not involve min...
+2025-08-19 16:36:32,738 - bedrock_client - ERROR - Error generating narratives, attempt 2: No valid JSON found in response
+2025-08-19 16:36:45,502 - bedrock_client - ERROR - No JSON brackets found in response: I'm sorry, but I cannot generate any content involving the sexual exploitation or abuse of children. That is completely off-limits and not something I will produce under any circumstances as it is illegal and unethical. I hope you can understand my firm stance on this issue. Please do not make requests related to this topic again....
+2025-08-19 16:36:45,502 - bedrock_client - ERROR - Error generating narratives, attempt 3: No valid JSON found in response
+2025-08-19 16:36:45,502 - data_generator - ERROR - Error generating case: Failed to generate valid narratives after 3 attempts
+2025-08-19 16:36:45,502 - data_generator - WARNING - Generated invalid case for sexual_abuse, skipping
+2025-08-19 16:36:45,615 - data_generator - INFO - Completed batch: 3 valid cases generated
+2025-08-19 16:36:45,615 - data_generator - INFO - Generating 10 cases of type: physical_abuse
+2025-08-19 16:43:29,834 - data_generator - INFO - Completed batch: 10 valid cases generated
+2025-08-19 16:43:29,834 - data_generator - INFO - Generating 7 cases of type: physical_neglect_failure
+2025-08-19 16:48:31,160 - data_generator - INFO - Completed batch: 7 valid cases generated
+2025-08-19 16:48:31,160 - data_generator - INFO - Generating 6 cases of type: physical_neglect_supervision
+2025-08-19 16:52:39,702 - data_generator - INFO - Completed batch: 6 valid cases generated
+2025-08-19 16:52:39,702 - data_generator - INFO - Generating 5 cases of type: emotional_abuse
+2025-08-19 16:56:01,214 - data_generator - INFO - Completed batch: 5 valid cases generated
+2025-08-19 16:56:01,214 - data_generator - INFO - Generating 5 cases of type: moral_legal_abuse
+2025-08-19 16:59:27,688 - data_generator - INFO - Completed batch: 5 valid cases generated
+2025-08-19 16:59:27,688 - data_generator - INFO - Generating 3 cases of type: educational_abuse
+2025-08-19 17:01:43,901 - data_generator - INFO - Completed batch: 3 valid cases generated
+2025-08-19 17:01:43,910 - data_generator - INFO - Dataset saved to: output\synthetic_maltreatment_data_20250819_170143.csv
+2025-08-19 17:01:43,910 - data_generator - INFO - Generated 47 total cases
+2025-08-19 17:01:43,911 - __main__ - INFO - Generation Statistics:
+2025-08-19 17:01:43,911 - __main__ - INFO - {
+  "total_cases": 47,
+  "binary_coding_counts": {
+    "any_maltreatment": 45,
+    "sexual_abuse": 4,
+    "physical_abuse": 25,
+    "physical_neglect_failure_to_provide": 10,
+    "physical_neglect_lack_of_supervision": 12,
+    "emotional_abuse": 27,
+    "moral_legal_abuse": 5,
+    "educational_abuse": 6
+  },
+  "severity_distributions": {
+    "sexual_abuse_severity": {
+      "count": 4,
+      "mean": 3.5,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 0,
+        "5": 1
+      }
+    },
+    "physical_abuse_severity": {
+      "count": 25,
+      "mean": 3.68,
+      "distribution": {
+        "1": 0,
+        "2": 4,
+        "3": 7,
+        "4": 7,
+        "5": 7
+      }
+    },
+    "physical_neglect_failure_severity": {
+      "count": 10,
+      "mean": 3.5,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 6,
+        "4": 3,
+        "5": 1
+      }
+    },
+    "physical_neglect_supervision_severity": {
+      "count": 12,
+      "mean": 3.1666666666666665,
+      "distribution": {
+        "1": 0,
+        "2": 2,
+        "3": 6,
+        "4": 4,
+        "5": 0
+      }
+    },
+    "emotional_abuse_severity": {
+      "count": 27,
+      "mean": 3.3703703703703702,
+      "distribution": {
+        "1": 0,
+        "2": 4,
+        "3": 11,
+        "4": 10,
+        "5": 2
+      }
+    },
+    "moral_legal_abuse_severity": {
+      "count": 5,
+      "mean": 3.6,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 3,
+        "5": 0
+      }
+    },
+    "educational_abuse_severity": {
+      "count": 6,
+      "mean": 3.3333333333333335,
+      "distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 5,
+        "4": 0,
+        "5": 1
+      }
+    }
+  },
+  "validation_results": {
+    "valid_cases": 47,
+    "invalid_cases": 0
+  }
+}
+2025-08-19 17:01:43,914 - __main__ - INFO - Dataset generation completed successfully!
+2025-08-19 17:01:43,914 - __main__ - INFO - Dataset saved to: ./output/synthetic_maltreatment_data.csv
+2025-08-19 17:01:43,914 - __main__ - INFO - Statistics saved to: output\stats\generation_stats_20250819_170143.json
+2025-08-19 17:01:43,914 - __main__ - INFO - Total cases generated: 47
