@@ -1,6 +1,6 @@
 {
-    "total_cases": 100,
-    "batch_size": 5,
+    "total_cases": 400,
+    "batch_size": 4,
     "model_id": "anthropic.claude-3-sonnet-20240229-v1:0",
     "region": "us-east-1",
     "max_retries": 3,
